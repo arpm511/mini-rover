@@ -4,6 +4,8 @@ This rover was produced for a university competition called [DTU RoboCup](https:
 
 For this reason, it follows a rocker-bogie design which was inspired by Nasa's JPL Martian Rover but modified to allow for all wheels to be independently controlled, place the motors inside the wheels and have all the wires hidden inside the arms.
 
+![mini rover photo1](./media/photos/IMG20260221144219.jpg)
+
 ### Attribution
 
 This project is based on the excellent **Wild Willy** 3D printable rover design. The original mechanical design has been adapted and modified for this specific competition and extended with custom electronics and software.
