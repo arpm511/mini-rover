@@ -9,9 +9,11 @@
 *.h     text diff=cpp
 *.h++   text diff=cpp
 *.hh    text diff=cpp
-*.ino   text diff=cpp
+*.ino   text diff=cpp linguist-language=Arduino
 
-src/Arduino/sketches/drive_test/* linguist-language=cpp
+# Mark all Arduino sketches as C++/Arduino
+src/Arduino/** linguist-language=Arduino linguist-detectable=true
+
 # Compiled Object files
 *.slo   binary
 *.lo    binary
