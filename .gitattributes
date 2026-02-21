@@ -35,14 +35,17 @@ src/Arduino/** linguist-language=Arduino linguist-detectable=true
 *.exe   binary
 *.out   binary
 *.app   binary
-# 3D models and print files (using Git LFS for large files)
-*.blend filter=lfs diff=lfs merge=lfs -text
-*.stl filter=lfs diff=lfs merge=lfs -text
-*.gcode filter=lfs diff=lfs merge=lfs -text
-*.step filter=lfs diff=lfs merge=lfs -text
-*.stp filter=lfs diff=lfs merge=lfs -text
-*.obj filter=lfs diff=lfs merge=lfs -text
-*.fbx filter=lfs diff=lfs merge=lfs -text
+# 3D models and print files (using Git LFS for large files + exclude from language stats)
+*.blend filter=lfs diff=lfs merge=lfs -text linguist-vendored
+*.stl filter=lfs diff=lfs merge=lfs -text linguist-vendored
+*.gcode filter=lfs diff=lfs merge=lfs -text linguist-vendored linguist-generated
+*.step filter=lfs diff=lfs merge=lfs -text linguist-vendored
+*.stp filter=lfs diff=lfs merge=lfs -text linguist-vendored
+*.obj filter=lfs diff=lfs merge=lfs -text linguist-vendored
+*.fbx filter=lfs diff=lfs merge=lfs -text linguist-vendored
+
+# Exclude 3D model directories from language detection
+description/models/** linguist-vendored
 
 # Images
 *.png filter=lfs diff=lfs merge=lfs -text
@@ -63,13 +66,16 @@ src/Arduino/** linguist-language=Arduino linguist-detectable=true
 *.pdf filter=lfs diff=lfs merge=lfs -text
 
 # Archives
-*.zip filter=lfs diff=lfs merge=lfs -text
-*.tar.gz filter=lfs diff=lfs merge=lfs -text
-*.rar filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text linguist-vendored
+*.tar.gz filter=lfs diff=lfs merge=lfs -text linguist-vendored
+*.rar filter=lfs diff=lfs merge=lfs -text linguist-vendored
 
-# 3d models
+# Additional 3D formats
+*.gltf filter=lfs diff=lfs merge=lfs -text linguist-vendored
 
-*.gltf filter=lfs diff=lfs merge=lfs -text
-*.stl filter=lfs diff=lfs merge=lfs -text
-*.gcode filter=lfs diff=lfs merge=lfs -text
-*.urdf filter=lfs diff=lfs merge=lfs -text
+# Mark documentation
+*.md linguist-documentation
+*.mhtml linguist-documentation linguist-vendored
+
+# Mark URDF as XML for proper highlighting
+*.urdf text linguist-language=XML
