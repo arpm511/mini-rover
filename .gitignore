@@ -1,0 +1,85 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.cproject
+.settings/
+
+# Arduino IDE
+*.ino.*.hex
+*.ino.eep
+*.ino.elf
+*.ino.with_bootloader.hex
+.build/
+build/
+*.autosave
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+.pytest_cache/
+*.egg-info/
+
+# ROS
+build/
+devel/
+install/
+.catkin_workspace
+*.pyc
+
+# Backup and Temporary Files
+*.bak
+*.blend1
+*.blend2
+*~
+*.tmp
+*.temp
+*.old
+*.orig
+
+# Logs and Databases
+*.log
+*.sql
+*.sqlite
+
+# Documentation Build
+docs/
+docs/_build/
+docs/.doctrees/
+
+# Large Binary Files (consider using Git LFS instead)
+# Uncomment if you don't want to track these in the repo
+# *.gcode
+# *.blend
+# description/models/gcode/
+# description/models/blender/
+
+# Compiled files
+*.o
+*.elf
+*.hex
+
+# Personal notes (uncomment if needed)
+# TODO.md
+# NOTES.md
