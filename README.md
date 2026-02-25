@@ -1,18 +1,29 @@
 ## Overview
 
-This rover was produced for a university competition called [DTU RoboCup](https://robocup.dtu.dk/) and was specifically designed to tackle the challenge of stair climbing obstacles. 
+A 6-wheel rocker-bogie rover featuring custom electronics and embedded control systems, built on the **Wild Willy** mechanical design originally created for the [DTU RoboCup](https://robocup.dtu.dk/) stair-climbing challenge.
 
-For this reason, it follows a rocker-bogie design which was inspired by Nasa's JPL Martian Rover but modified to allow for all wheels to be independently controlled, place the motors inside the wheels and have all the wires hidden inside the arms.
+This project focuses on developing advanced motor control algorithms, power management systems, and autonomous navigation capabilities using modern embedded systems and robotics frameworks.
+
+The rocker-bogie suspension design, inspired by NASA's JPL Martian rovers, enables:
+- Independent control of all six wheels
+- In-wheel motor mounting for improved weight distribution
+- Integrated cable management throughout the arm structure
 
 ![mini rover photo1](./media/photos/IMG20260221144219.jpg)
 
-### Attribution
+### Project Scope & Attribution
 
-This project is based on the excellent **Wild Willy** 3D printable rover design. The original mechanical design has been adapted and modified for this specific competition and extended with custom electronics and software.
+**Original Mechanical Design**: [Wild Willy](https://robocup.dtu.dk/) - 3D printable rocker-bogie chassis, differential systems, and frame structure. The STL files are included in this repository for assembly reference.
 
-> **Note**: This is a work in progress. The rover currently has a basic drive system, and development is ongoing for advanced features like PID motor control and autonomous navigation.
+**Custom Development Work**:
+- **Electronics Design**: Motor driver circuits, power distribution, sensor integration
+- **Embedded Software**: Arduino-based PID motor control, encoder feedback systems
+- **Control Algorithms**: Speed regulation, differential steering implementation  
+- **Future Development**: ROS2 integration for autonomous navigation and SLAM
 
-The differential between the two main arms is inside the enclosure  to keep the top free for future additions. The main frame has mounting holes all the way around making it easy to mount things inside the main frame.
+The differential mechanism between the main arms is housed internally to maximize available mounting space. The frame features mounting points around the perimeter for expansion with additional sensors and systems.
+
+> **Project Status**: Active development. Current implementation includes basic drive systems and manual control. Ongoing work focuses on closed-loop PID motor control and preliminary autonomous navigation capabilities.
 
 ## 3D Printing
 
@@ -142,11 +153,8 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for gu
 
 ## Acknowledgments
 
-- Original Wild Willy mechanical design
-- DTU RoboCup for the competition framework
-- NASA JPL for the rocker-bogie inspiration
+- **Wild Willy** - Original rocker-bogie mechanical design and 3D printable chassis
+- **DTU RoboCup** - Competition framework that inspired the original design
+- **NASA JPL** - Rocker-bogie suspension concept from Martian rover programs
 
----
-
-**Built with ❤️ for the robotics community**
 
